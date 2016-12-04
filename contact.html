@@ -6,7 +6,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Poznańska Grupa .NET - Wydarzenia</title>
+    <title>Poznańska Grupa .NET - Strona Główna</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -26,11 +26,11 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="events.html" class="selected">Wydarzenia</a></li>
+                    <li><a href="events.html">Wydarzenia</a></li>
                     <li><a href="speakers.html">Prelegenci</a></li>
                     <li><a href="organisers.html">Organizatorzy</a></li>
                     <li><a href="support.html">Współpraca</a></li>
-                    <li><a href="contact.html">Kontakt</a></li>
+                    <li><a href="contact.html" class="selected">Kontakt</a></li>
                 </ul>
             </nav>
         </header>
@@ -41,16 +41,45 @@
     <div class="main-container">
         <div class="main wrapper">
 
-            <article>
+            <article id="contact">
                 <header>
-                    <h1>Wydarzenia</h1>
+                    <h1>Kontakt</h1>
                     <p>
-                        Poniżej znajdziesz listę nadchodzących oraz poprzednich wydarzeń.
+                        Jeżeli chcesz się z nami skontaktować wybierz jeden z poniższych kanałów:
                     </p>
                 </header>
-                <section id="loading">
-                    <h2>Ładowanie...</h2>
-                    <p></p>
+                <p>
+                    <a href="http://facebook.com/pgdotnet/">
+                        <img src="img/facebook.png" class="social" /> Facebook - wyślij wiadomość
+                    </a>
+                </p>
+                <p>
+                    <a href="http://twitter.com/pgdotnet/">
+                        <img src="img/twitter.png" class="social" /> Twitter - wyślij wiadomość
+                    </a>
+                </p>
+                <p>
+                    <a href="mailto:pgdotnet@outlook.com">
+                        <img src="img/mail.png" class="social" /> E-mail
+                    </a>
+                </p>
+                <p>
+                    <a href="http://pgdotnet.slack.com/">
+                        <img src="img/slack.png" class="social" /> Slack - dołącz do dyskusji 
+                    </a>
+                </p>
+                <section>
+                    <h2>Slack - jak dołączyć</h2>
+                    <p>
+                        Aby dołączyć do naszego Slacka wyślij do nas Twój adres e-mail na któryś z powyższych kanałów.
+                    </p>
+                </section>
+                <section>
+                    <h2>Spotkania</h2>
+                    <p>
+                        Zachęcamy również do zadawania pytań organizatorom na spotkaniach - to najszybszy sposób
+                        żeby otrzymać odpowiedź na nurtujące Cię pytanie :)
+                    </p>
                 </section>
             </article>
 
@@ -88,8 +117,6 @@
             &copy; Poznańska Grupa .NET
         </footer>
     </div>
-
-    <script src="js/events.js"></script>
 
     <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=

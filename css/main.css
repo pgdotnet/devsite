@@ -147,11 +147,11 @@ img.social {
 .main aside a .label {
     display: none;
 }
-section.speaker {
+section.speaker, section.organiser {
     display: flex;
     flex-direction: column;
 }
-section.speaker header {
+section.speaker header, section.organiser header {
     display: flex;
     flex-direction: row;
     align-items: center;

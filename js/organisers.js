@@ -1,27 +1,21 @@
 var speakers = [
     {
-        name: 'Paweł Łukasik', photo: 'pawel-lukasik.jpg', twitter: 'pawel_lukasik', www: 'http://octal.pl',
-        presentations: [
-            { meeting: '#62', title: 'Hackowanie IL-a', link: 'http://slides.com/pawellukasik/hackowanie-ila-14#/' }
-        ]
+        name: 'Bartosz Adamiak', photo: '', twitter: '', www: '', github: '', linkedin: '', facebook: ''
     },
     {
-        name: 'Szymon Warda', photo: 'szymon-warda.jpg', twitter: 'maklipsa', www: 'http://indexoutofrange.com/', github: 'maklipsa', linkedin: 'https://linkedin.com/in/szymonwarda',
-        presentations: [
-            { meeting: '#61', title: 'Graph databases - why and how', link: '' }
-        ]
+        name: 'Bartosz Sokół', photo: 'bartosz-sokol.jpeg', twitter: 'bartsokol', www: 'http://bart-sokol.info', github: 'bartsokol', linkedin: 'https://www.linkedin.com/in/bartsokol', facebook: ''
     },
     {
-        name: 'Bartosz Sokół', photo: 'bartosz-sokol.jpeg', twitter: 'bartsokol', www: 'http://bart-sokol.info', github: 'bartsokol', linkedin: 'https://www.linkedin.com/in/bartsokol',
-        presentations: [
-            { meeting: '#61', title: 'Microservices, Micropains, Microgains', link: 'https://github.com/pgdotnet/Meetings/tree/master/Spotkanie%2061/Microservices' }
-        ]
+        name: 'Bartosz Zaremba', photo: '', twitter: '', www: '', github: '', linkedin: '', facebook: ''
     },
     {
-        name: 'Jakub Pawłowski',
-        presentations: [
-            { meeting: '#60', title: '.NET Core - what is it and why should I care?', link: '' }
-        ]
+        name: 'Jarosław Janiszewski', photo: '', twitter: '', www: '', github: '', linkedin: '', facebook: ''
+    },
+    {
+        name: 'Tomasz Janczyszyn', photo: '', twitter: '', www: '', github: '', linkedin: '', facebook: ''
+    },
+    {
+        name: 'Tomasz Kujawa', photo: 'tomasz-kujawa.jpeg', twitter: 'tomkuj', www: '', github: '', linkedin: '', facebook: ''
     }
 ];
 
@@ -68,17 +62,6 @@ var speakers = [
         } else {
             linkedin.remove();
         }
-        var samplePres = el.querySelectorAll('dl')[0];
-        speaker.presentations.forEach(function(pres) {
-            var presEl = samplePres.cloneNode(true);
-            presEl.querySelectorAll('dt')[0].innerHTML = pres.meeting;
-            var link = document.createElement('a');
-            if (pres.link) link.href = pres.link;
-            link.innerHTML = pres.title;
-            presEl.querySelectorAll('dd')[0].appendChild(link);
-            el.appendChild(presEl);
-        }, this);
-        samplePres.remove();
         parent.appendChild(el);
     }, this);
     sampleSpk.remove();
